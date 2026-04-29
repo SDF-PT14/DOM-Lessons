@@ -1,0 +1,49 @@
+DOM(Document Object Model):a representation of an HTML document created by the browser which allows JS to interact with the page
+* Browser receives the HTML file
+* Browser reads the HTMl line by line
+* Browser converts HTML into objects 
+* Browser organizes the objects into a structure 
+* That structure becomes DOM
+
+.document
+  .HTMl
+    .body
+	  .h1
+	  .p
+Every part of the DOM is a node
+
+1. Parent:An element that contains another element 
+2. Child:An element inside another element 
+3. Sibling:Elements at the same level
+
+DOM selection
+==============
+1. Selecting by tagname
+ex:h1,p,li,img,ul
+2. Selecting by classname
+3.Selecting by id
+4.using querySelector(selects the first matching element)
+5.using querySelectorAll(select all Elements)
+
+DOM manipulation
+=================
+1.changing text content=>use textContent work with plain text
+2.innerHTML
+3.innerText
+
+DOM Events 
+===========
+is an action that happens in the browser and JS to respond it 
+* user clicks a button
+* user types in an input
+* user submits a form
+* the page finishes loading 
+mouse moves over an element 
+
+Basic Event Flow 
+====================
+step1: select an element
+step 2:Attach an event listener
+step3: write what should happen once the action happen 
+
+element.addEventListener("eventType,callbackfunction())
